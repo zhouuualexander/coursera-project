@@ -1,0 +1,41 @@
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content nav {
+  margin-left: 20px;
+  display: flex;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-content ul li {
+  margin-left: 10px;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease; /* Add this line for transition effect */
+}
+
+.footer-content ul li a:hover {
+  color: #ff0000; /* Customize the color as desired */
+}
