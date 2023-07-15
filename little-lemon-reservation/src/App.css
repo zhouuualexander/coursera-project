@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.logo {
+  max-width: 200px; /* Adjust the value as needed */
+  height: auto;
+}
