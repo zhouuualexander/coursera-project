@@ -1,24 +1,23 @@
 import React from "react";
 import "./Nav.css";
+import HomePage from "./HomePage";
+import BookingPage from "./BookingPage";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="nav">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/services">Services</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <Router>
+      <nav className="nav">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/booking">Booking</Link>
+          </li>
+        </ul>
+      </nav>
+    </Router>
   );
 }
 
