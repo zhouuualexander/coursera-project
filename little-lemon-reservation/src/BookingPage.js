@@ -16,15 +16,7 @@ function BookingPage() {
   }
 
   function initializeTimes() {
-    const today = new Date().toISOString().split("T")[0]; // Get today's date in the format 'YYYY-MM-DD'
-
-    // Call the API function to fetch the available times for today's date
-    return fetchAPI(today)
-      .then((response) => response.data.times)
-      .catch((error) => {
-        console.error("Error fetching available times:", error);
-        return [];
-      });
+    return [];
   }
 
   return (
